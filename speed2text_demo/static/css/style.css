@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: #ffd99b;
+  background: linear-gradient(0deg, #eb2f06, #b8e994);
 }
 body {
   font-family: Helvetica, Arial, sans-serif;

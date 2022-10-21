@@ -112,9 +112,9 @@ function createDownloadLink(blob) {
     var viet = document.createElement('button');
     viet.setAttribute("id",'translate');
     var text = document.createElement('span');
-    text.innerHTML = "hellsddhellsddddddddddddddddddddddddddddddohellsddddddddddddddddddddddddddddddohellsddddddddddddddddddddddddddddddohellsddddddddddddddddddddddddddddddoddddddddddddddddddddddddddddo";
+    text.innerHTML = "";
     eng.href = "#";
-    eng.innerHTML = "Translate to English";
+    eng.innerHTML = "Transcribe to English";
     eng.addEventListener("click", function(event) {
         var xhr = new XMLHttpRequest();
         var fd = new FormData();
@@ -135,7 +135,7 @@ function createDownloadLink(blob) {
     });
     
     viet.href = "#";
-    viet.innerHTML = "Translate to Vienamese";
+    viet.innerHTML = "Transcribe to Vienamese";
     viet.addEventListener("click", function(event) {
         var xhr = new XMLHttpRequest();
         var fd = new FormData();
@@ -164,9 +164,6 @@ function createDownloadLink(blob) {
     li.appendChild(viet) //add the upload link to li
     li.appendChild(document.createTextNode(" "))
     li.appendChild(text);
-    // li.appendChild(document.createTextNode(" "))
-    // li.appendChild(text2);
-    // li.appendChild(document.createTextNode(" "))
     
     recordingsList.appendChild(li);
     
