@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+      <title>Simple Recorder.js demo with record, stop and pause</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <h1>Speech To Text</h1>
+      <div id="controls">
+         <button id="recordButton">Record</button>
+         <button id="pauseButton" disabled>Pause</button>
+         <button id="stopButton" disabled>Stop</button>
+      </div>
+      <h3>Recordings</h3>
+      <ol id="recordingsList"></ol>
+   </body>
+
+
+<!-- inserting these scripts at the end to be able to use all the elements in the DOM --> 
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='js/recorder.js') }}"></script>
