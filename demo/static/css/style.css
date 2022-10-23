@@ -244,6 +244,39 @@
         -moz-animation-delay: .8s;
         -o-animation-delay: .8s;
     }
+
+    .text-indication-of-audio-handling {
+        font-size: 20px;
+    }
+
+    /* 3 Dots animation*/
+    .text-indication-of-audio-handling span {
+        /*transitions with Firefox, IE and Opera Support browser support*/
+        animation-name: blinking-dot;
+        -webkit-animation-name: blinking-dot;
+        -moz-animation-name: blinking-dot;
+        -o-animation-name: blinking-dot;
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+    }
+    .text-indication-of-audio-handling span:nth-child(2) {
+        animation-delay: .4s;
+        -webkit-animation-delay: .4s;
+        -moz-animation-delay: .4s;
+        -o-animation-delay: .4s;
+    }
+    .text-indication-of-audio-handling span:nth-child(3) {
+        animation-delay: .8s;
+        -webkit-animation-delay: .8s;
+        -moz-animation-delay: .8s;
+        -o-animation-delay: .8s;
+    }
     /* The animation code */
     @keyframes blinking-dot {
         0% {

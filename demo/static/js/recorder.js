@@ -231,7 +231,10 @@ function sendAudio(recorderAudioAsBlob) {
     var data = new FormData()
     data.append('file', recorderAudioAsBlob , 'file')
 
-    fetch('http://127.0.0.1:5000/transcribe', {
+    var url = "http://127.0.0.1:5000/transcribe-";
+    var model = $('input[name="model"]:checked').val();
+    console.log(url + model)
+    fetch(url + model, {
           method: 'POST',
           body: data
 
