@@ -31,7 +31,7 @@ For training & inference
 
 For generating language model with KenLM, use notebook in notebooks folder.
 
-We share the checkpoint (*base, batch_size 1, gradient accumulation steps 10, epoch 14*)\.
+We share the [checkpoint](https://drive.google.com/file/d/1vSaQjvjljToYlekm_GvlOkJYGLQA5EdJ/view?usp=sharing) (*base, batch_size 1, gradient accumulation steps 10, epoch 14, lr 0.0001*)\.
 ## Demo
 
 
@@ -40,8 +40,9 @@ We share the checkpoint (*base, batch_size 1, gradient accumulation steps 10, ep
 ![Wav2vec](images/wav2vec.png "Wav2vec")
 ## Contributing
 
-- We modified the ASTGCN model with full three information from last hour, yesterday and previous week.
-- We compare ASTGCN with GCN, LSTM, HA in various settings.
+- We finetune Whisper on 100h speech dataset.
+- We implement BeamSearchWithLM, using KenLM and showed positive result.
+
 ## Result
 
 | Methods                   | Fleurs  | Vin100h (Full) | 
