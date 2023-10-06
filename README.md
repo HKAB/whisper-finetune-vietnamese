@@ -1,6 +1,8 @@
 
 # Whiper vietnamese finetuning
 
+\[In case you are looking for a Vietnamese ASR model, have a look at [HKAB/whisper-finetune-1-notebook](https://github.com/HKAB/whisper-finetune-1-notebook) \]
+
 This notebook contains:
 - Notebooks finetuning, inferencing and generating N-gram.
 - Demo Whisper and Wav2vec
